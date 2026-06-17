@@ -37,6 +37,7 @@
     "jquery": "^3.7.1",
     "jquery-ui-bundle": "^1.12.1-migrate",
     "js-cookie": "^3.0.5",
+    "konva": "^10.0.2",
     "lucide-react": "^0.562.0",
     "moment": "^2.29.1",
     "picomatch-browser": "^2.2.6",

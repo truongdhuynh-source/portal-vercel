@@ -2558,6 +2558,11 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
+konva@^10.0.2:
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/konva/-/konva-10.3.0.tgz#960c39cb3518357284ae35b189c7dc3295570bd5"
+  integrity sha512-gt19K2gzY4lHbnkvsku7eSmB+A9PTS2jG4F9coBMsdjM1UKfJNxJbDbXVpeCW1wjEGRwBD3nBamcHnqJhAeKlg==
+
 levn@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmjs.org/levn/-/levn-0.4.1.tgz"
