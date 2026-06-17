@@ -13,6 +13,7 @@ import { ProfileRedirect } from "@/pages/Profile/ProfileRedirect";
 import { LicenseRedirect } from "@/pages/Licenses/LicenseRedirect";
 import TermsOfUse from "@/pages/TermsOfUse";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import HomePage from "@/pages/Home";
 
 const SharePasswordPage = withSuspense(
   React.lazy(() => import("@/oda-sdk/views/Share")),
@@ -82,6 +83,10 @@ const RouterConfig = ({ app, loading }) => {
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<Navigate to={defaultPath} replace />} />
+          <Route
+            path="/files"
+            element={<Navigate to={"/my-files"} replace />}
+          />
 
           <Route path="my-files">
             <Route index element={<MyFiles data={data} />} />
@@ -157,10 +162,7 @@ const RouterConfig = ({ app, loading }) => {
   return (
     <Suspense fallback={<AppLoading />}>
       <Routes>
-        <Route
-          path="/files"
-          element={<Navigate to={"/my-files"} replace />}
-        />
+        <Route path="/" element={<HomePage />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route
