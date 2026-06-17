@@ -1,0 +1,15 @@
+.new-badge {
+  position: absolute;
+  border-radius: 50%;
+  top: 5px;
+  transform: translateX(5%);
+
+  .ant-badge-count {
+    background-color: #098e50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+.oda-cda-tree-view .active {
+  color: var(--orange);
+}
+
+.oda-cda-tree-view ul {
+  list-style: none;
+  padding-inline-start: 0.75em;
+  margin-bottom: 0;
+  user-select: none;
+}
+
+.oda-cda-tree-view ul:first-child {
+  padding-inline-start: 0;
+}

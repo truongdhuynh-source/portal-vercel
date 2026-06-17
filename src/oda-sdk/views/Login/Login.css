@@ -1,0 +1,30 @@
+.login-fullscreen {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .login-fullscreen {
+    min-height: auto;
+  }
+}
+
+.login-fullscreen--center {
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.login-content {
+  width: 340px;
+  max-width: 340px;
+  margin: 1.5rem;
+}
+
+.login-logo {
+  width: auto;
+  height: 34px;
+}

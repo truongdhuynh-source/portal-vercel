@@ -1,0 +1,18 @@
+.ant-layout-sider-collapsed .sidebar-bottom-menu {
+  .ant-menu-submenu-title {
+    padding-inline: 0 !important;
+    .ant-menu-item-icon {
+      margin: auto !important;
+      transform: translateY(20%);
+    }
+  }
+}
+
+.sidebar-bottom-menu {
+  .ant-menu-title-content .menu-ellipsis {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

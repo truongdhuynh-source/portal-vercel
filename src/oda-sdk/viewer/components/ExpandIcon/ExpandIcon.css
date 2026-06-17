@@ -1,0 +1,17 @@
+.oda-expand-icon {
+  width: 0.85em;
+  height: auto;
+  min-width: 0.85em;
+  min-height: 0.85em;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.oda-expand-space {
+  display: inline-block;
+  width: 0.85em;
+  height: auto;
+  min-width: 0.85em;
+  min-height: 0.85em;
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,59 @@
+.oda-window {
+  border: 1px solid #e4e4e4;
+  background: #ffffff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: absolute;
+  left: 42px;
+  top: 22px;
+  z-index: 1;
+  width: 300px;
+  height: 600px;
+  min-width: 300px;
+  min-height: 230px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+  .oda-window {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .oda-window {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .oda-window {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .oda-window {
+    max-width: 50%;
+  }
+}
+
+.oda-window-head {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+  cursor: move;
+}
+
+.oda-window-head:active {
+  cursor: move;
+}
+
+.oda-window button.btn-close {
+  margin-left: auto;
+  margin-right: 0px;
+}

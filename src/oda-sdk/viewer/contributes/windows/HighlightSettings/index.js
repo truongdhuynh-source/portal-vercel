@@ -1,0 +1,1 @@
+export { HighlightSettings } from "./HighlightSettings";

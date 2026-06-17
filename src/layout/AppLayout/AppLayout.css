@@ -1,0 +1,82 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.section-main {
+  display: flex;
+  flex-direction: column;
+  /* Fallback cũ trước */
+  max-height: 100svh;
+  /* iOS 15+ ổn hơn */
+  max-height: 100svh;
+}
+
+/* Nếu trình duyệt hỗ trợ dvh (iOS 16.4+, Android Chrome mới) thì ưu tiên */
+@supports (height: 100dvh) {
+  .section-main {
+    min-height: 100dvh;
+  }
+}
+
+.layout-main {
+  flex: 1; /* thay cho calc(...) */
+  min-height: 0; /* bắt buộc để con được scroll */
+  display: flex; /* giữ layout ổn định */
+}
+
+.layout-content {
+  min-height: 0;
+  overflow: auto;
+}
+
+.layout-body {
+  height: calc(100vh - 47px);
+  background: #ffffff;
+
+  &.full-view {
+    height: 100vh;
+  }
+
+  .admin-height {
+    height: 100vh;
+    background: #ffffff;
+  }
+
+  .no-padding {
+    padding: 0 !important;
+  }
+
+  .layout-container {
+    position: relative;
+    border-top-left-radius: 8px;
+    height: 100%;
+    padding: 16px 16px 0 16px;
+    background: #f0f2f5;
+
+    .layout-content {
+      padding: 16px 16px 0 16px;
+      background: #ffffff;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      height: 100%;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+  }
+
+  &.mobile .layout-container {
+    border-top-left-radius: 0px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .layout-body .layout-container {
+    padding: 12px 12px 0 12px;
+
+    .layout-content {
+      padding: 12px 12px 0 12px;
+    }
+  }
+}

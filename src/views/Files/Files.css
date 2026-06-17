@@ -1,0 +1,112 @@
+.my-files {
+  display: flex;
+  flex-direction: column;
+
+  .file-type-icon {
+    position: relative;
+    width: 22px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .file-type-icon__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .file-type-icon__svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .file-type-icon__svg-glyph {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    dominant-baseline: middle;
+  }
+
+  .file-type-icon__svg-label {
+    font-size: 6px;
+    font-weight: 800;
+    letter-spacing: 0.45px;
+    dominant-baseline: middle;
+  }
+
+  .file-type-icon__svg-app {
+    font-size: 3.8px;
+    font-weight: 800;
+    letter-spacing: 0.25px;
+    dominant-baseline: middle;
+  }
+
+  .action-container {
+    margin-bottom: 16px;
+  }
+
+  .table-container {
+    padding: 0;
+  }
+
+  .ant-table-wrapper {
+    padding: 20px;
+    height: calc(100svh - 180px);
+  }
+
+  .ant-input-group-wrapper {
+    margin-left: 10px;
+  }
+
+  .ant-pagination {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .my-files {
+    .ant-table-wrapper {
+      padding: 0;
+    }
+    .ant-table-wrapper {
+      padding: 0;
+      height: calc(100svh - 170px);
+    }
+    .ant-pagination {
+      bottom: 25px;
+      right: 15px;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .my-files {
+    .action-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .ant-input-group-wrapper {
+      margin: 0;
+    }
+
+    .ant-table-wrapper {
+      height: calc(100svh - 205px) !important;
+    }
+
+    .ant-pagination {
+      position: fixed;
+      bottom: 15px;
+      right: 10px;
+      margin-bottom: 0 !important;
+    }
+  }
+}

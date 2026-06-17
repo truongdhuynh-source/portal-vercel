@@ -1,0 +1,63 @@
+.oda-viewer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+
+.oda-viewer-container {
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.oda-viewer-viewer-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+.oda-viewer-viewer-wrapper canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.oda-cursor-pan {
+  cursor:
+    url(./assets/cursors/pan.png) 0 0,
+    default !important;
+}
+
+.oda-cursor-pan:active {
+  cursor:
+    url(./assets/cursors/pan-active.png) 0 0,
+    default !important;
+}
+
+.oda-cursor-orbit {
+  cursor:
+    url(./assets/cursors/rotate.png) 0 0,
+    default;
+}
+
+.oda-cursor-orbit:active {
+  cursor:
+    url(./assets/cursors/rotate-active.png) 0 0,
+    default;
+}
+
+@media screen and (max-width: 768px) {
+  .oda-viewer {
+    height: calc(100svh - 50px) !important;
+  }
+  .fullscreen {
+    height: 100svh !important;
+  }
+}

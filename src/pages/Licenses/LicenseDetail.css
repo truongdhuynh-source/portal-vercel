@@ -1,0 +1,179 @@
+.license-details-page {
+  .license-details-container {
+    display: flex;
+    /* box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.5); */
+    border: 1px solid #eef2f4;
+    border-radius: 4px;
+    background: white;
+
+    .meta-info {
+      width: 25%;
+      padding: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border-right: 1px solid #f0f0f0;
+
+      .meta-info-item {
+        text-align: center;
+
+        .status-license-select {
+          width: 150px;
+          border-radius: 7px;
+        }
+      }
+    }
+
+    .license-main {
+      width: 100%;
+      padding: 16px;
+
+      .label {
+        font-weight: 500;
+      }
+
+      .title {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .input-search {
+    width: 300px;
+  }
+
+  .meta-info-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .meta-info-content {
+    font-style: italic;
+  }
+
+  .break-words {
+    overflow-wrap: break-word;
+  }
+
+  .info-item {
+    height: 100%;
+    border-radius: 4px;
+  }
+
+  .license-seat {
+    display: flex;
+    gap: 6px;
+    font-size: 14px;
+  }
+  .license-seat .label {
+    color: #6b7280;
+  }
+  .license-seat .value {
+    font-weight: 600;
+  }
+
+  .ant-table {
+    .ant-table-body {
+      overflow: auto !important;
+    }
+    .ant-table-thead > tr:first-child > *:first-child {
+      border-start-start-radius: 6px;
+    }
+
+    .ant-table-thead > tr:first-child > *:last-child {
+      border-start-end-radius: 6px;
+    }
+
+    .ant-table-tbody > tr:last-child > *:first-child {
+      border-end-start-radius: 6px;
+    }
+
+    .ant-table-tbody > tr:last-child > *:last-child {
+      border-end-end-radius: 6px;
+    }
+
+    .ant-table-thead > tr:first-child > *:first-child,
+    .ant-table-tbody > tr > *:first-child {
+      border-left: 0.5px solid #eef2f4;
+    }
+
+    .ant-table-thead > tr th.ant-table-cell-scrollbar {
+      display: none;
+    }
+
+    .ant-table-thead > tr th,
+    .ant-table-tbody > tr td {
+      box-sizing: border-box;
+      height: calc(0.25rem * 12);
+      border-style: solid;
+      border-width: 0.5px;
+      border-left: 0px;
+      border-color: #eef2f4;
+      background-color: #fff;
+      text-align: center;
+      line-height: 1.5;
+      white-space: nowrap;
+      color: #333;
+      border-radius: 0;
+      padding: 0;
+
+      &::before {
+        all: unset !important;
+      }
+    }
+
+    .ant-table-tbody > tr td {
+      border-top: 0px;
+    }
+
+    .ant-table-tbody > tr {
+      background-color: #fff;
+    }
+  }
+}
+
+.add-license-modal {
+  width: 500px !important;
+}
+
+@media (max-width: 768px) {
+  .license-details-page {
+    .license-details-container {
+      .license-main {
+        padding: 8px;
+      }
+    }
+
+    .input-search {
+      width: 250px;
+    }
+
+    .license-main .ant-row {
+      margin: 0 -8px;
+    }
+
+    .info-item {
+      text-align: left;
+      height: 100%;
+    }
+
+    .info-item .meta-info-label {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .info-item p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+
+  .ant-modal .ant-modal-content {
+    padding: 20px !important;
+  }
+
+  .add-license-modal {
+    width: 400px !important;
+  }
+}

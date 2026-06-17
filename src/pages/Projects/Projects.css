@@ -1,0 +1,59 @@
+.projects-page {
+  .ant-page-header .ant-page-header-heading-extra {
+    margin-block: unset !important;
+  }
+
+  .projects-container {
+    height: calc(100vh - 105px);
+  }
+  .project-item {
+    cursor: pointer;
+    border-radius: 6px !important;
+    height: 350px;
+
+    .ant-card-body {
+      padding: 12px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .ant-image {
+      width: 100%;
+    }
+    .img-thumbnail {
+      height: 150px;
+      object-fit: cover;
+      padding: 0;
+    }
+
+    .item-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .item-meta {
+      margin-top: 0.5rem;
+      flex: 1;
+      .ant-card-meta-title {
+        margin-bottom: 0;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .item-info .ant-statistic > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .ant-pagination {
+    margin-top: 8px;
+    display: flex;
+    gap: 5px;
+  }
+}

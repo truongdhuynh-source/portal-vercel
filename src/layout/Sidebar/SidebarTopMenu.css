@@ -1,0 +1,30 @@
+.new-badge {
+  position: absolute;
+  border-radius: 50%;
+  top: 5px;
+  transform: translateX(5%);
+
+  .ant-badge-count {
+    background-color: #098e50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+}
+
+.ant-badge-total {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  background-color: #098e50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+}

@@ -1,0 +1,47 @@
+.oda-toolbar {
+  z-index: 903;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.75rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 992px) {
+  .oda-toolbar {
+    gap: 0.2rem;
+  }
+}
+
+.oda-toolbar-group {
+  pointer-events: auto;
+}
+
+.oda-toolbar-dropdown-overlay {
+  z-index: 903 !important;
+}
+
+.ant-dropdown .ant-segmented-group {
+  max-width: calc(100vw);
+  overflow: auto;
+}
+
+.ant-segmented-item-label {
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 1280px) {
+  .ant-segmented-item-label {
+    min-width: 45px;
+  }
+}
+
+.text-black-25 {
+  color: rgba(0, 0, 0, 0.25) !important;
+}

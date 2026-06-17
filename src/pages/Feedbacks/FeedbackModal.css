@@ -1,0 +1,97 @@
+.feedback-modal {
+  .btn-upload {
+    height: 35px;
+    border-radius: 7px;
+    border: 1px dashed #d9d9d9;
+  }
+
+  .ant-upload-list-item {
+    margin-top: 0;
+    height: 36px !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .ant-upload-list-item-container {
+    transition: none !important;
+  }
+
+  .upload-note {
+    font-size: 12px;
+  }
+
+  .ant-rate {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #007bff;
+  }
+
+  .ant-rate-star-zero {
+    svg {
+      color: #7d7878;
+    }
+  }
+
+  .ant-upload-wrapper .ant-upload-drag {
+    background: #f5f7f7;
+    border: 1px dashed #00b96b;
+    border-radius: 12px;
+  }
+
+  .ant-upload-wrapper .ant-upload-drag:hover {
+    border-color: #00b96b;
+  }
+
+  .ant-upload-drag-icon {
+    margin-bottom: 8px;
+  }
+
+  .ant-upload-drag-icon .anticon {
+    font-size: 36px;
+    color: #00b96b;
+  }
+
+  .ant-upload-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+  }
+
+  .ant-upload-hint {
+    color: #667085;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+  }
+
+  .upload-note {
+    margin-top: 8px;
+    color: #667085;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 576px) {
+    .ant-modal {
+      max-width: 95% !important;
+      margin: 10px !important;
+    }
+
+    .ant-rate {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 12px;
+    }
+
+    .upload-note {
+      font-size: 11px;
+      line-height: 1.3;
+    }
+
+    .ant-modal .ant-modal-content {
+      padding: 20px 15px !important;
+    }
+  }
+}

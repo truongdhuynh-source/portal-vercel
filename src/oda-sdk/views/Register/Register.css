@@ -1,0 +1,30 @@
+.register-fullscreen {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 576px) {
+  .register-fullscreen {
+    min-height: auto;
+  }
+}
+
+.register-fullscreen--center {
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.register-content {
+  width: 340px;
+  max-width: 340px;
+  margin: 1.5rem;
+}
+
+.register-logo {
+  width: auto;
+  height: 34px;
+}

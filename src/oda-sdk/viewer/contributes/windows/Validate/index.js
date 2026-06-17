@@ -1,0 +1,1 @@
+export { ValidateWindow } from "./Validate";

@@ -1,0 +1,89 @@
+.ant-drawer-content-wrapper {
+  width: 250px !important;
+}
+
+.drawer-sidebar {
+  width: 250px !important;
+
+  .ant-drawer-header {
+    padding: 10px 5px !important;
+    border: none;
+
+    .ant-drawer-close {
+      color: white !important;
+    }
+  }
+
+  .ant-drawer-body {
+    padding: 0 !important;
+
+    .ant-menu-item,
+    .ant-menu-submenu-title {
+      margin: auto !important;
+    }
+  }
+
+  .btn-redirect {
+    background-color: #001529 !important;
+    color: rgba(255, 255, 255, 0.65) !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    height: 35px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    border: 1px solid gray !important;
+    margin-left: 0 !important;
+    padding: 4px 7px;
+
+    + .btn-redirect {
+      margin-left: 8px !important;
+    }
+  }
+
+  .btn-bim:hover {
+    color: #2b64f6 !important;
+    background-color: whitesmoke !important;
+  }
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      width: 28px;
+      height: 28px;
+    }
+
+    .logo-text {
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+  .ant-drawer-extra {
+    display: flex;
+    align-items: center;
+
+    .close-icon {
+      color: #393838;
+      margin-right: 2px;
+    }
+  }
+
+  .ant-menu {
+    .ant-menu-submenu-title {
+      margin-right: auto !important;
+      margin-left: auto !important;
+      margin-bottom: 2px !important;
+    }
+    .ant-menu-item {
+      margin-bottom: 2px !important;
+      border-radius: 6px;
+      margin-right: auto !important;
+      margin-left: auto !important;
+    }
+  }
+
+  .ant-menu-sub {
+    background: none !important;
+  }
+}

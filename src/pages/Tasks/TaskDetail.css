@@ -1,0 +1,259 @@
+/* task detail */
+.task-details-page {
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+  height: calc(100svh - 95px) !important;
+  /* margin: 20px 0; */
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+  /* Smooth scrolling on iOS */
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+
+    &:hover {
+      background: #555;
+    }
+  }
+
+  .task-details-container {
+    /* min-height: min-content;
+    height: auto; */
+    display: flex;
+    border-radius: 4px;
+    background: white;
+    height: 100%;
+
+    .meta-info {
+      width: 25%;
+      max-width: 300px;
+      min-width: 170px;
+      padding: 30px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border-right: 1px solid #f0f0f0;
+
+      .meta-info-item {
+        text-align: center;
+      }
+
+      .meta-info-label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .meta-info-content {
+        font-style: italic;
+      }
+    }
+
+    .task-main {
+      width: calc(100vw - 590px);
+      padding: 0 20px;
+      gap: 10px;
+      overflow-y: auto;
+
+      .title {
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-style: italic;
+      }
+
+      .comment-title {
+        span {
+          padding-bottom: 3px;
+          border-bottom: 1px solid #212930;
+          font-weight: 700;
+        }
+      }
+
+      .content {
+        white-space: pre-wrap;
+      }
+
+      .task-content {
+        justify-content: start;
+        margin-top: 10px;
+        width: max-content;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.comment-list {
+  .group-comment {
+    overflow: auto;
+    padding: 5px;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: gray;
+    }
+  }
+}
+
+/* task popup */
+.ant-rate {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #098e50;
+}
+
+.ant-rate-star-zero {
+  svg {
+    color: #7d7878;
+  }
+}
+
+/* task comment */
+.ant-comment {
+  box-shadow:
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 8px;
+
+  + .ant-comment {
+    margin-top: 10px;
+  }
+}
+
+.ant-comment-inner {
+  padding: 15px;
+}
+
+.ant-comment-content-author-time {
+  color: gray;
+}
+
+.ant-comment-content-author-name {
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1380px) {
+  .task-details-page {
+    .task-details-container {
+      .task-main {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .task-details-page {
+    .task-details-container {
+      .task-main {
+        .title {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .task-details-page {
+    height: calc(100svh - 135px) !important;
+
+    .task-details-container {
+      .meta-info {
+        width: 30%;
+        padding: 30px 10px;
+      }
+
+      .task-main {
+        width: 70%;
+
+        .title {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Styles - refine existing mobile styles */
+@media screen and (max-width: 480px) {
+  .task-details-page {
+    flex: 1;
+    /* margin: 10px 0 0 0; */
+    height: calc(100svh - 120px) !important;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .task-details-container {
+      flex-direction: column;
+
+      .meta-info {
+        width: 100%;
+        padding: 15px;
+        gap: 5px;
+        flex-direction: row;
+        justify-content: center;
+        border-right: none;
+
+        .ant-divider {
+          margin: 0 10px;
+          transform: rotate(90deg);
+          min-width: auto;
+          width: 40px;
+        }
+
+        .meta-info-item {
+          flex: 1;
+          font-size: 14px;
+        }
+      }
+
+      .task-main {
+        width: 100%;
+        padding: 15px 0;
+
+        .title {
+          font-size: 16px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .ant-comment-inner {
+    padding: 10px;
+  }
+
+  .ant-comment-content-author {
+    font-size: 14px;
+  }
+}
+
+/* Desktop large screen optimization */
+/* @media screen and (min-width: 1025px) {
+  .task-details-page {
+    .task-details-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+} */

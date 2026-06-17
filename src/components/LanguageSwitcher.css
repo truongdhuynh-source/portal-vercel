@@ -1,0 +1,28 @@
+.language-switcher-dropdown {
+  display: flex;
+  align-items: center;
+
+  .icon-body {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    margin-right: 4px;
+    border: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .ant-dropdown {
+    min-width: 150px !important;
+
+    .language-title {
+      margin-left: 10px;
+    }
+  }
+
+  .language-name {
+    min-width: 40px;
+  }
+}

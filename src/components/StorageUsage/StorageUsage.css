@@ -1,0 +1,22 @@
+.storage-usage {
+  .usage-title {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .usage-value {
+      font-weight: 600;
+    }
+  }
+  .usage-progress-bar {
+    line-height: 1;
+    .ant-progress-outer {
+      .ant-progress-inner,
+      .ant-progress-bg-outer {
+        height: 10px !important;
+        border-radius: 2px;
+      }
+    }
+  }
+}
